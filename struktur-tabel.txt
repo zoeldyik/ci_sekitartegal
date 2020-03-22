@@ -1,0 +1,25 @@
+projext ini menggunakan 3 table yaitu table admin, data dan kategori
+
+
+CREATE TABLE admin(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+user varchar(255),
+password varchar(255)
+)
+
+
+CREATE TABLE kategori(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nama varchar(255)
+)
+
+
+CREATE TABLE data(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+kategori_id INT,
+foto varchar(255),
+tempat varchar(255),
+teks TEXT,
+website varchar(255),
+instagram varchar(255)
+)
